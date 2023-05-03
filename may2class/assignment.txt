@@ -1,0 +1,53 @@
+/* Difference betweeen compiler and Interpreter*/ 
+Compiler:
+A compiler is a translator that produces an output of low-level language (like an assembly or machine language) by taking an input of high-level language. It is basically a computer program used to transform codes written in a programming language into machine code (human-readable code to a binary 0 and 1 bits language for a computer processor to understand). The computer then processes the machine code for performing the corresponding tasks.
+  * Compilers check all types of errors, limits, and ranges. Thus, it’s more intelligent.
+   * The run time of its program is longer, and it occupies more memory.
+
+ Interpreter:
+It is a program that functions for the translation of a programming language into a comprehensible one. It is a computer program used for converting high-level program statements into machine codes. It includes pre-compiled code, source code, and scripts.
+   *An interpreter translates only one statement at a time of the program.
+    *They create an exe of the programming language before the program runs.
+
+/* call(),apply(),bind() methods in js*/
+
+Call() Method:
+	The call() method calls the function directly and sets "this"to the first  argument passed to the call method and if any other  sequences of arguments preceding the first argument are passed to the call method then they are passed as an arguments to the function.
+ Syntax:
+fun.call(object);
+fun.call(object,arg1,-----,argN);
+
+Apply Method():
+	The apply() method calls the function directly and sets "this"to the first  argument passed to the apply method and if any other arguments provided as an array are passed to the call method then they are passed as an arguments to the function.
+Syntax:
+fun.apply(object);
+fun.apply(object,argsArray);
+
+ #Difference between  call and apply methods are in apply method ,we pass arguments in form of an array.
+
+BindMethod():
+	The bind function creates a copy of a function with a new value to the this present inside the calling function.
+fun.bind(thisobj,arg1,arg2-----,argN);
+
+/*javascript Hoisting*/
+
+1.Hoisting :Mechanism in JS where the variable declarations are moved to the top of the scope before execution.Therefore it is possible to call a function before intializing it.
+2.Arrow functions enact as variables and get "undefined" during the memory creation phase while functions actually get run.
+3.In JS,before the code is executed ,the variable gets intialized to undefined
+4.whenever  a JS program is run,a global execution block is created,which comprises of Memory creation and Code execution.
+5.variable declarations are scanned and are made undefined.
+6.Function Declarations are scanned and are made available.
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
